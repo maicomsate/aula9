@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Salário Mensal</h1>
+        <form id="salaryForm">
+            <label for="hourlyRate">Ganho por hora (R$):</label>
+            <input type="number" id="hourlyRate" step="0.01" required>
+            
+            <label for="hoursWorked">Horas trabalhadas no mês:</label>
+            <input type="number" id="hoursWorked" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="results" style="display: none;">
+            <h2>Resultados:</h2>
+            <p>Salário bruto: <span id="salarioBruto"></span></p>
+            <p>Desconto INSS: <span id="descontoINSS"></span></p>
+            <p>Desconto Imposto de Renda: <span id="descontoIR"></span></p>
+            <p>Desconto Sindicato: <span id="descontoSindicato"></span></p>
+            <p>Salário líquido: <span id="salarioLiquido"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
